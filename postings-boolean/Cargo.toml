@@ -1,0 +1,7 @@
+[package]
+name = "postings-boolean"
+version = "0.1.0"
+authors = ["Daniël de Kok <me@danieldk.eu>"]
+
+[dev-dependencies]
+quickcheck = "0.3"
