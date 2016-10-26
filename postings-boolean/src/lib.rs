@@ -36,20 +36,20 @@ impl PostingList {
     }
 
     pub fn difference_binsearch(&self, other: &PostingList) -> PostingList {
-        let mut inter = Vec::new();
+        let mut diff = Vec::new();
 
         let mut offset = 0;
         for doc in &self.docs {
             offset = match other.docs[offset..].binary_search(doc) {
                 Ok(idx) => idx,
                 Err(idx) => {
-                    inter.push(*doc);
+                    diff.push(*doc);
                     idx
                 }
             }
         }
 
-        PostingList { docs: inter }
+        PostingList { docs: diff }
     }
 
 
@@ -243,11 +243,11 @@ mod tests {
                 docs: ys.iter().map(ToOwned::to_owned).collect()
             };
 
-            let posting_isect = p1.union(&p2);
+            let posting_union = p1.union(&p2);
 
-            let set_isect: Vec<_> = xs.union(&ys).map(ToOwned::to_owned).collect();
+            let set_union: Vec<_> = xs.union(&ys).map(ToOwned::to_owned).collect();
 
-            posting_isect.docs == set_isect
+            posting_union.docs == set_union
         }
     }
 
