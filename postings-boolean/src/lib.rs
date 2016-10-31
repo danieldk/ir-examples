@@ -8,7 +8,7 @@ pub struct PostingList {
 
 impl PostingList {
     pub fn difference(&self, other: &PostingList) -> PostingList {
-        let mut result = Vec::with_capacity(self.docs.len() + other.docs.len());
+        let mut result = Vec::new();
 
         let mut p1i = 0;
         let mut p2i = 0;
