@@ -1,0 +1,10 @@
+[package]
+name = "sarr"
+version = "0.1.0"
+authors = ["Daniël de Kok <me@danieldk.eu>"]
+
+[dependencies]
+
+[dev-dependencies]
+quickcheck = "0.4"
+rand = "0.3"
