@@ -180,6 +180,8 @@ mod tests {
             }
 
             let sarr = SuffixArray::new(data.clone());
+
+            // Note: we could check all subsequences as well.
             let seq = random_subsequence(&data);
 
             sarr.contains(seq)
@@ -209,6 +211,7 @@ mod tests {
 
             let sarr = SuffixArray::new(data.clone());
 
+            // Note: we could check all subsequences as well.
             let seq = random_subsequence(&data);
 
             let suffixes = sorted_suffixes_index(&data);
