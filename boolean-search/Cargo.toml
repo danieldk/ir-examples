@@ -1,0 +1,10 @@
+[package]
+name = "boolean-search"
+version = "0.1.0"
+authors = ["Daniël de Kok <me@danieldk.eu>"]
+
+[dependencies]
+conllx = "0.3"
+getopts = "0.2"
+itertools = "0.5"
+stdinout = "0.1"
