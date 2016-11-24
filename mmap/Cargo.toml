@@ -1,0 +1,8 @@
+[package]
+name = "mmap"
+version = "0.1.0"
+authors = ["Daniël de Kok <me@danieldk.eu>"]
+
+[dependencies]
+getopts = "0.2"
+memmap = "0.5"
