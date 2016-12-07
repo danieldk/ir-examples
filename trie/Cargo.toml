@@ -1,0 +1,12 @@
+[package]
+name = "trie"
+version = "0.1.0"
+authors = ["Daniël de Kok <me@danieldk.eu>"]
+
+[dependencies]
+getopts = "0.2"
+num = "0.1"
+rand = "0.3"
+
+[dev-dependencies]
+quickcheck = "0.4"
