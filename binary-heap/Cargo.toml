@@ -1,0 +1,8 @@
+[package]
+name = "binary-heap"
+version = "0.1.0"
+authors = ["Daniël de Kok <me@danieldk.eu>"]
+
+[dev-dependencies]
+quickcheck = "0.3"
+rand = "0.3"
