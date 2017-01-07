@@ -1,0 +1,10 @@
+[package]
+name = "curse-dimensionality"
+version = "0.1.0"
+authors = ["Daniël de Kok <me@danieldk.eu>"]
+
+[dependencies]
+getopts = "0.2"
+ndarray= "0.7"
+ndarray-rand = "0.3"
+rand = "0.3"
