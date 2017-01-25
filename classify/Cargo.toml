@@ -1,0 +1,12 @@
+[package]
+name = "classify"
+version = "0.1.0"
+authors = ["Daniël de Kok <me@danieldk.eu>"]
+
+[dependencies]
+conllx = "0.3"
+fnv = "1"
+getopts = "0.2"
+itertools = "0.5"
+num-traits = "0.1"
+walkdir = "1"
